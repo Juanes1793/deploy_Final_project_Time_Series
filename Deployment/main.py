@@ -8,7 +8,7 @@ from functools import reduce
 
 app = FastAPI()
 
-time_series_model = tf.keras.models.load_model(MODELS_DIR / "time_series_model.h5")
+time_series_model = tf.keras.models.load_model("time_series_model.h5")
 
 
 # Endpoint for predictions
